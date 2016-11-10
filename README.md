@@ -12,6 +12,8 @@ To run the project, please follow the steps given below. Please note that you mi
 
 3. Now go to XAMPP folder again. Inside that find a file called “xampp-control.exe” . Run this file . A window will open . Click start   for Apache and MySQL module . And make sure this runs all the time while running the project.
 
+![alt tag](https://github.com/saloni29993/Study-Guide-Genie/blob/master/screenshots/xamp.png)
+
 4. 4. Go to your browser (Google chrome most prefered). Type the following link: “localhost/phpmyadmin” 
 On the left menu you will find a new button. When you click that button you will create a database with name “ javagenie” and press create.
 Once you have created the new database, from the top menu c lick import. Click Choose file button a nd s elect the file “javagenie.sql” f rom d atabase folder i n our submission folder. And p r e s s G  o .
@@ -25,9 +27,11 @@ Please allow some time for the database tables to load. You will see a message s
 
 8. Allow some time for the it to load... When nothing more is printed in the console everything has been loaded.  Make sure this window is open all the time.
 
+![alt tag](https://github.com/saloni29993/Study-Guide-Genie/blob/master/screenshots/bash.png)
+
 9. Now, go to your browser and go to url -> “localhost:9200” You should see something like this...
 
- 
+![alt tag](https://github.com/saloni29993/Study-Guide-Genie/blob/master/screenshots/code.png) 
 
 This means Elasticsearch is running. 
 
@@ -36,13 +40,12 @@ You should see the home page. You are now free to use the system.
 
 11. You can login with few of these credentials or look at the database for the set of users for their login information.
       1) Username: KashBhansali 
-       2) Username: JohnSmith
+      2) Username: JohnSmith
       3) Username: NikitShah
-      4) Username: MattTodd
-      
-The Password for all of the above users is: qwer. 
+      4) Username: MattTodd  
+      The Password for all of the above users is: qwer. 
 
 12. The app.R file consists of the code for social graph. The file just needs to be run on RStudio while xampp is running and press “Run App” button to see the social graph for a user.
 
 
-12. The app.R file consists of the code for social graph. The file just needs to be run on RStudio while xampp is running and press “Run App” button to see the social graph for a user.
+
