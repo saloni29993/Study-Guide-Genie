@@ -1,0 +1,1295 @@
+[2016-04-20 11:22:23,459][DEBUG][action.search            ] [Yandroth] [notes][1], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=C8CubsUUTFCo7s5cBjktOw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1aee945]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No value specified for term query]
+	at org.elasticsearch.index.query.TermQueryParser.parse(TermQueryParser.java:108)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:76)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:22:23,459][DEBUG][action.search            ] [Yandroth] [notes][3], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=CXaJDkkGQmWLCdCDDa5MlQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1aee945] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No value specified for term query]
+	at org.elasticsearch.index.query.TermQueryParser.parse(TermQueryParser.java:108)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:76)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:22:23,459][DEBUG][action.search            ] [Yandroth] [notes][4], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=0i-VLkmiQBSR8pfLx36iwQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1aee945] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No value specified for term query]
+	at org.elasticsearch.index.query.TermQueryParser.parse(TermQueryParser.java:108)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:76)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:22:23,459][DEBUG][action.search            ] [Yandroth] [notes][0], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=36HBtmeLSJyOJbtfvW_JWQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1aee945] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No value specified for term query]
+	at org.elasticsearch.index.query.TermQueryParser.parse(TermQueryParser.java:108)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:76)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:22:23,459][DEBUG][action.search            ] [Yandroth] [notes][2], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=TiFRUbEYSZyQLpj_TfA8dw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1aee945] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No value specified for term query]
+	at org.elasticsearch.index.query.TermQueryParser.parse(TermQueryParser.java:108)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:76)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:22:23,515][DEBUG][action.search            ] [Yandroth] All shards failed for phase: [query]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":{"term":{"uid":null}}}}}]]; nested: QueryParsingException[No value specified for term query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No value specified for term query]
+	at org.elasticsearch.index.query.TermQueryParser.parse(TermQueryParser.java:108)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:76)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:20,580][DEBUG][action.search            ] [Yandroth] [notes][0], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=36HBtmeLSJyOJbtfvW_JWQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@318eb7eb] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:20,580][DEBUG][action.search            ] [Yandroth] [notes][1], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=C8CubsUUTFCo7s5cBjktOw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@318eb7eb] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:20,580][DEBUG][action.search            ] [Yandroth] [notes][4], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=0i-VLkmiQBSR8pfLx36iwQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@318eb7eb] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:20,580][DEBUG][action.search            ] [Yandroth] [notes][2], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=TiFRUbEYSZyQLpj_TfA8dw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@318eb7eb] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:20,580][DEBUG][action.search            ] [Yandroth] [notes][3], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=CXaJDkkGQmWLCdCDDa5MlQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@318eb7eb]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:20,588][DEBUG][action.search            ] [Yandroth] All shards failed for phase: [query]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:20,591][WARN ][rest.suppressed          ] /notes/note/_search Params: {index=notes, type=note}
+Failed to execute phase [query], all shards failed; shardFailures {[TVb6UroTTRGQ-ThJ_flt1g][notes][0]: RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException; }{[TVb6UroTTRGQ-ThJ_flt1g][notes][1]: RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException; }{[TVb6UroTTRGQ-ThJ_flt1g][notes][2]: RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException; }{[TVb6UroTTRGQ-ThJ_flt1g][notes][3]: RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException; }{[TVb6UroTTRGQ-ThJ_flt1g][notes][4]: RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException; }
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onFirstPhaseResult(AbstractSearchAsyncAction.java:206)
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction$1.onFailure(AbstractSearchAsyncAction.java:152)
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:46)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:855)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:833)
+	at org.elasticsearch.transport.TransportService$4.onFailure(TransportService.java:387)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: ; nested: NullPointerException;
+	at org.elasticsearch.ElasticsearchException.guessRootCauses(ElasticsearchException.java:386)
+	at org.elasticsearch.action.search.SearchPhaseExecutionException.guessRootCauses(SearchPhaseExecutionException.java:152)
+	at org.elasticsearch.action.search.SearchPhaseExecutionException.getCause(SearchPhaseExecutionException.java:99)
+	at java.lang.Throwable.printStackTrace(Throwable.java:665)
+	at java.lang.Throwable.printStackTrace(Throwable.java:721)
+	at org.apache.log4j.DefaultThrowableRenderer.render(DefaultThrowableRenderer.java:60)
+	at org.apache.log4j.spi.ThrowableInformation.getThrowableStrRep(ThrowableInformation.java:87)
+	at org.apache.log4j.spi.LoggingEvent.getThrowableStrRep(LoggingEvent.java:413)
+	at org.apache.log4j.WriterAppender.subAppend(WriterAppender.java:313)
+	at org.apache.log4j.WriterAppender.append(WriterAppender.java:162)
+	at org.apache.log4j.AppenderSkeleton.doAppend(AppenderSkeleton.java:251)
+	at org.apache.log4j.helpers.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:66)
+	at org.apache.log4j.Category.callAppenders(Category.java:206)
+	at org.apache.log4j.Category.forcedLog(Category.java:391)
+	at org.apache.log4j.Category.log(Category.java:856)
+	at org.elasticsearch.common.logging.log4j.Log4jESLogger.internalWarn(Log4jESLogger.java:135)
+	at org.elasticsearch.common.logging.support.AbstractESLogger.warn(AbstractESLogger.java:109)
+	at org.elasticsearch.rest.BytesRestResponse.convert(BytesRestResponse.java:134)
+	at org.elasticsearch.rest.BytesRestResponse.<init>(BytesRestResponse.java:96)
+	at org.elasticsearch.rest.BytesRestResponse.<init>(BytesRestResponse.java:87)
+	at org.elasticsearch.rest.action.support.RestActionListener.onFailure(RestActionListener.java:60)
+	at org.elasticsearch.action.support.TransportAction$1.onFailure(TransportAction.java:95)
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.raiseEarlyFailure(AbstractSearchAsyncAction.java:294)
+	... 10 more
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	... 3 more
+[2016-04-20 11:34:21,725][DEBUG][action.search            ] [Yandroth] [notes][3], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=CXaJDkkGQmWLCdCDDa5MlQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@339c3ee3] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:21,725][DEBUG][action.search            ] [Yandroth] [notes][4], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=0i-VLkmiQBSR8pfLx36iwQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@339c3ee3]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:21,725][DEBUG][action.search            ] [Yandroth] [notes][2], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=TiFRUbEYSZyQLpj_TfA8dw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@339c3ee3] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:21,725][DEBUG][action.search            ] [Yandroth] [notes][0], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=36HBtmeLSJyOJbtfvW_JWQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@339c3ee3] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:21,725][DEBUG][action.search            ] [Yandroth] [notes][1], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=C8CubsUUTFCo7s5cBjktOw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@339c3ee3] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:21,728][DEBUG][action.search            ] [Yandroth] All shards failed for phase: [query]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException;
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 11:34:21,735][WARN ][rest.suppressed          ] /notes/note/_search Params: {index=notes, type=note}
+Failed to execute phase [query], all shards failed; shardFailures {[TVb6UroTTRGQ-ThJ_flt1g][notes][0]: RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException; }{[TVb6UroTTRGQ-ThJ_flt1g][notes][1]: RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException; }{[TVb6UroTTRGQ-ThJ_flt1g][notes][2]: RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException; }{[TVb6UroTTRGQ-ThJ_flt1g][notes][3]: RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException; }{[TVb6UroTTRGQ-ThJ_flt1g][notes][4]: RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must_not":[{"match":{"content":" final variables are nothing but constants. We cannot change the value of a final variable once it is initialized. "}}]}},"aggs":{"topicindex":{"significant_terms":{"exclude":"are|has|as|have|that|is|a|an|the|of|and|by|was|in|there|when|from|we|to|can|it|be|or"}}},"sort":{"likes":{"order":"desc"}}}]]; nested: NullPointerException; }
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onFirstPhaseResult(AbstractSearchAsyncAction.java:206)
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction$1.onFailure(AbstractSearchAsyncAction.java:152)
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:46)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:855)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:833)
+	at org.elasticsearch.transport.TransportService$4.onFailure(TransportService.java:387)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: ; nested: NullPointerException;
+	at org.elasticsearch.ElasticsearchException.guessRootCauses(ElasticsearchException.java:386)
+	at org.elasticsearch.action.search.SearchPhaseExecutionException.guessRootCauses(SearchPhaseExecutionException.java:152)
+	at org.elasticsearch.action.search.SearchPhaseExecutionException.getCause(SearchPhaseExecutionException.java:99)
+	at java.lang.Throwable.printStackTrace(Throwable.java:665)
+	at java.lang.Throwable.printStackTrace(Throwable.java:721)
+	at org.apache.log4j.DefaultThrowableRenderer.render(DefaultThrowableRenderer.java:60)
+	at org.apache.log4j.spi.ThrowableInformation.getThrowableStrRep(ThrowableInformation.java:87)
+	at org.apache.log4j.spi.LoggingEvent.getThrowableStrRep(LoggingEvent.java:413)
+	at org.apache.log4j.WriterAppender.subAppend(WriterAppender.java:313)
+	at org.apache.log4j.WriterAppender.append(WriterAppender.java:162)
+	at org.apache.log4j.AppenderSkeleton.doAppend(AppenderSkeleton.java:251)
+	at org.apache.log4j.helpers.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:66)
+	at org.apache.log4j.Category.callAppenders(Category.java:206)
+	at org.apache.log4j.Category.forcedLog(Category.java:391)
+	at org.apache.log4j.Category.log(Category.java:856)
+	at org.elasticsearch.common.logging.log4j.Log4jESLogger.internalWarn(Log4jESLogger.java:135)
+	at org.elasticsearch.common.logging.support.AbstractESLogger.warn(AbstractESLogger.java:109)
+	at org.elasticsearch.rest.BytesRestResponse.convert(BytesRestResponse.java:134)
+	at org.elasticsearch.rest.BytesRestResponse.<init>(BytesRestResponse.java:96)
+	at org.elasticsearch.rest.BytesRestResponse.<init>(BytesRestResponse.java:87)
+	at org.elasticsearch.rest.action.support.RestActionListener.onFailure(RestActionListener.java:60)
+	at org.elasticsearch.action.support.TransportAction$1.onFailure(TransportAction.java:95)
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.raiseEarlyFailure(AbstractSearchAsyncAction.java:294)
+	... 10 more
+Caused by: java.lang.NullPointerException
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsAggregatorFactory.<init>(SignificantTermsAggregatorFactory.java:151)
+	at org.elasticsearch.search.aggregations.bucket.significant.SignificantTermsParser.parse(SignificantTermsParser.java:80)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:198)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	... 3 more
+[2016-04-20 12:15:23,315][DEBUG][action.search            ] [Yandroth] [notes][3], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=CXaJDkkGQmWLCdCDDa5MlQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7166eac6] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:23,319][DEBUG][action.search            ] [Yandroth] [notes][2], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=TiFRUbEYSZyQLpj_TfA8dw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7166eac6]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:23,319][DEBUG][action.search            ] [Yandroth] [notes][1], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=C8CubsUUTFCo7s5cBjktOw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7166eac6] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:23,319][DEBUG][action.search            ] [Yandroth] [notes][0], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=36HBtmeLSJyOJbtfvW_JWQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7166eac6] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:23,315][DEBUG][action.search            ] [Yandroth] [notes][4], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=0i-VLkmiQBSR8pfLx36iwQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7166eac6] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:23,323][DEBUG][action.search            ] [Yandroth] All shards failed for phase: [query]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@74909534; line: 3, column: 28]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:34,454][DEBUG][action.search            ] [Yandroth] [notes][0], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=36HBtmeLSJyOJbtfvW_JWQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@74582914] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:34,454][DEBUG][action.search            ] [Yandroth] [notes][1], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=C8CubsUUTFCo7s5cBjktOw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@74582914]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:34,454][DEBUG][action.search            ] [Yandroth] [notes][4], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=0i-VLkmiQBSR8pfLx36iwQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@74582914] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:34,454][DEBUG][action.search            ] [Yandroth] [notes][3], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=CXaJDkkGQmWLCdCDDa5MlQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@74582914] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:34,454][DEBUG][action.search            ] [Yandroth] [notes][2], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=TiFRUbEYSZyQLpj_TfA8dw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@74582914] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:15:34,462][DEBUG][action.search            ] [Yandroth] All shards failed for phase: [query]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+Caused by: SearchParseException[failed to parse search source [{
+    "query" : {
+        "match_all" : { _id="AVQ1D-PN3d8hrlp7lCos"}
+    }
+}]]; nested: QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[Failed to parse]; nested: JsonParseException[Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]];
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:208)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('=' (code 61)): was expecting a colon to separate field name and value
+ at [Source: [B@ba509ea; line: 3, column: 29]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1581)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:462)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3006)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:2981)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:744)
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:53)
+	at org.elasticsearch.index.query.MatchAllQueryParser.parse(MatchAllQueryParser.java:55)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	... 15 more
+[2016-04-20 12:27:28,130][DEBUG][action.search            ] [Yandroth] [notes][1], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=C8CubsUUTFCo7s5cBjktOw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@39aaa179] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No text specified for text query]
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerFilter(QueryParseContext.java:263)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:132)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 12:27:28,134][DEBUG][action.search            ] [Yandroth] [notes][0], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=36HBtmeLSJyOJbtfvW_JWQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@39aaa179]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No text specified for text query]
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerFilter(QueryParseContext.java:263)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:132)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 12:27:28,130][DEBUG][action.search            ] [Yandroth] [notes][2], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=TiFRUbEYSZyQLpj_TfA8dw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@39aaa179] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No text specified for text query]
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerFilter(QueryParseContext.java:263)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:132)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 12:27:28,130][DEBUG][action.search            ] [Yandroth] [notes][3], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=CXaJDkkGQmWLCdCDDa5MlQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@39aaa179] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No text specified for text query]
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerFilter(QueryParseContext.java:263)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:132)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 12:27:28,130][DEBUG][action.search            ] [Yandroth] [notes][4], node[TVb6UroTTRGQ-ThJ_flt1g], [P], v[6], s[STARTED], a[id=0i-VLkmiQBSR8pfLx36iwQ]: Failed to execute [org.elasticsearch.action.search.SearchRequest@39aaa179] lastShard [true]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No text specified for text query]
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerFilter(QueryParseContext.java:263)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:132)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 12:27:28,138][DEBUG][action.search            ] [Yandroth] All shards failed for phase: [query]
+RemoteTransportException[[Yandroth][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+Caused by: SearchParseException[failed to parse search source [{"query":{"bool":{"must":[{"range":{"nlevel":{"gte":"1"}}}],"must_not":[{"match":{"topic":null}}]}}}]]; nested: QueryParsingException[No text specified for text query];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:855)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:654)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:620)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:371)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:368)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:365)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:75)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:376)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [notes] QueryParsingException[No text specified for text query]
+	at org.elasticsearch.index.query.MatchQueryParser.parse(MatchQueryParser.java:162)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerFilter(QueryParseContext.java:263)
+	at org.elasticsearch.index.query.BoolQueryParser.parse(BoolQueryParser.java:132)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:250)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:303)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:206)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:201)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:838)
+	... 12 more
+[2016-04-20 14:47:36,744][INFO ][bootstrap                ] running graceful exit on windows
+[2016-04-20 14:47:36,744][INFO ][node                     ] [Yandroth] stopping ...
+[2016-04-20 14:47:36,900][INFO ][node                     ] [Yandroth] stopped
+[2016-04-20 14:47:36,900][INFO ][node                     ] [Yandroth] closing ...
+[2016-04-20 14:47:36,900][INFO ][node                     ] [Yandroth] closed

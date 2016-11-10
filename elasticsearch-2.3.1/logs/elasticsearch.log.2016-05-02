@@ -1,0 +1,19 @@
+[2016-05-02 15:48:11,704][INFO ][node                     ] [Angar the Screamer] version[2.3.1], pid[6672], build[bd98092/2016-04-04T12:25:05Z]
+[2016-05-02 15:48:11,720][INFO ][node                     ] [Angar the Screamer] initializing ...
+[2016-05-02 15:48:12,610][INFO ][plugins                  ] [Angar the Screamer] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2016-05-02 15:48:12,642][INFO ][env                      ] [Angar the Screamer] using [1] data paths, mounts [[(C:)]], net usable_space [185.6gb], net total_space [221gb], spins? [unknown], types [NTFS]
+[2016-05-02 15:48:12,642][INFO ][env                      ] [Angar the Screamer] heap size [910.5mb], compressed ordinary object pointers [true]
+[2016-05-02 15:48:14,567][INFO ][node                     ] [Angar the Screamer] initialized
+[2016-05-02 15:48:14,567][INFO ][node                     ] [Angar the Screamer] starting ...
+[2016-05-02 15:48:14,786][INFO ][transport                ] [Angar the Screamer] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-05-02 15:48:14,786][INFO ][discovery                ] [Angar the Screamer] elasticsearch/g1iudOR9QpyaU2jd5xRajQ
+[2016-05-02 15:48:18,909][INFO ][cluster.service          ] [Angar the Screamer] new_master {Angar the Screamer}{g1iudOR9QpyaU2jd5xRajQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-05-02 15:48:19,097][INFO ][http                     ] [Angar the Screamer] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-05-02 15:48:19,097][INFO ][node                     ] [Angar the Screamer] started
+[2016-05-02 15:48:19,404][INFO ][gateway                  ] [Angar the Screamer] recovered [4] indices into cluster_state
+[2016-05-02 15:48:26,132][INFO ][cluster.routing.allocation] [Angar the Screamer] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[textbook][3]] ...]).
+[2016-05-02 16:30:39,073][INFO ][bootstrap                ] running graceful exit on windows
+[2016-05-02 16:30:39,073][INFO ][node                     ] [Angar the Screamer] stopping ...
+[2016-05-02 16:30:39,276][INFO ][node                     ] [Angar the Screamer] stopped
+[2016-05-02 16:30:39,276][INFO ][node                     ] [Angar the Screamer] closing ...
+[2016-05-02 16:30:39,276][INFO ][node                     ] [Angar the Screamer] closed

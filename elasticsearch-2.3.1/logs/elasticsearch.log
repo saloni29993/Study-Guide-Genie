@@ -1,0 +1,19 @@
+[2016-05-04 19:38:41,256][INFO ][node                     ] [Ernst] version[2.3.1], pid[4108], build[bd98092/2016-04-04T12:25:05Z]
+[2016-05-04 19:38:41,261][INFO ][node                     ] [Ernst] initializing ...
+[2016-05-04 19:38:42,036][INFO ][plugins                  ] [Ernst] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2016-05-04 19:38:42,061][INFO ][env                      ] [Ernst] using [1] data paths, mounts [[(C:)]], net usable_space [185.5gb], net total_space [221gb], spins? [unknown], types [NTFS]
+[2016-05-04 19:38:42,062][INFO ][env                      ] [Ernst] heap size [910.5mb], compressed ordinary object pointers [true]
+[2016-05-04 19:38:44,365][INFO ][node                     ] [Ernst] initialized
+[2016-05-04 19:38:44,365][INFO ][node                     ] [Ernst] starting ...
+[2016-05-04 19:38:44,562][INFO ][transport                ] [Ernst] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-05-04 19:38:44,567][INFO ][discovery                ] [Ernst] elasticsearch/1bpjgRQZSZ2p4v7ydl4_nQ
+[2016-05-04 19:38:48,637][INFO ][cluster.service          ] [Ernst] new_master {Ernst}{1bpjgRQZSZ2p4v7ydl4_nQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-05-04 19:38:48,877][INFO ][http                     ] [Ernst] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-05-04 19:38:48,877][INFO ][node                     ] [Ernst] started
+[2016-05-04 19:38:48,949][INFO ][gateway                  ] [Ernst] recovered [4] indices into cluster_state
+[2016-05-04 19:38:51,944][INFO ][cluster.routing.allocation] [Ernst] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[textbook][1]] ...]).
+[2016-05-04 21:12:59,033][INFO ][bootstrap                ] running graceful exit on windows
+[2016-05-04 21:12:59,033][INFO ][node                     ] [Ernst] stopping ...
+[2016-05-04 21:12:59,111][INFO ][node                     ] [Ernst] stopped
+[2016-05-04 21:12:59,111][INFO ][node                     ] [Ernst] closing ...
+[2016-05-04 21:12:59,111][INFO ][node                     ] [Ernst] closed
