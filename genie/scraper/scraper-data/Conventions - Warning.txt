@@ -1,0 +1,1 @@
+To warn the user of things like common pitfalls, the XWarning template should be used as demonstrated:

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script type="text/javascript" src="jquery-2.2.1.min.js">
+</script>
+        <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
+        <title>
+            User Login
+        </title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js">
+</script>
+        <script type="text/javascript" src="masonry.pkgd.min.js">
+</script>
+        <script>
+$('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+        })
+        </script>
+        <style>
+
+        .btn-block{
+        width: 100%;
+        }
+
+       
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        html, body{
+          height: 100%;
+          font-weight: 50;
+        }
+
+        body{
+          background: #00000;
+          font-family: Arial;
+        }
+
+        svg {
+            display: block;
+            font: 6em 'Calibri';
+            width: 960px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .text-copy {
+            fill: none;
+            stroke: white;
+            stroke-dasharray: 10% 29%;
+            stroke-width: 5px;
+            stroke-dashoffset: 0%;
+            animation: stroke-offset 5.5s infinite linear;
+        }
+
+        .text-copy:nth-child(1){
+            stroke: #0000FF;
+            animation-delay: -1;
+        }
+
+        .text-copy:nth-child(2){
+            stroke: #6666FF;
+            animation-delay: -2s;
+        }
+
+        .text-copy:nth-child(3){
+            stroke: #9999FF;
+            animation-delay: -3s;
+        }
+
+        .text-copy:nth-child(4){
+            stroke: #66CCCC;
+            animation-delay: -4s;
+        }
+
+       .text-copy:nth-child(5){
+            stroke: #CCFF99;
+            animation-delay: -5s;
+        }
+
+        @keyframes stroke-offset{
+            100% {stroke-dashoffset: -35%;}
+        }
+    
+
+
+        </style>
+    </head>
+    <body style="padding:0px;margin:0px">
+
+
+
+<div class="header">
+    <div class="row">
+    <svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+        <text text-anchor="middle" x="50%" y="60%">JAVA STUDY GUIDE GENIE</text>
+    </symbol>
+
+    <g class = "g-ants">
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+</svg>
+    </div>
+    
+    <div class="row">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container" style="border-width:1px;border-radius:4px;">
+            <div class="row">
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4"></div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <h1>
+                        
+                    </h1>
+                    <form action="login.php" method="post" class="form-group">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label> <input type="email" name="username" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label> <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div><button type="submit" name="login" class="btn btn-primary btn-lg btn-block">Login</button>
+                    </form><button name="register" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Register</button>
+                </div>
+                <div class="col-md-4 col-sm-4"></div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            Modal title
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="register.php" method="post" class="form-group">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Name</label> <input type="name" name="name" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label> <input type="username" name="username" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label> <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div><button type="submit" name="register" class="btn btn-primary btn-lg btn-block">Save</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

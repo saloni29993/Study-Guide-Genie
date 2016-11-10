@@ -1,0 +1,1 @@
+The book follows the official Java code conventions. Here is an example:
